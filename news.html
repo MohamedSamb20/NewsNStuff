@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer type="text/javascript" src="./news.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <style>
+      div{
+        padding:10px;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.flaticon.com/svg/static/icons/svg/3028/3028392.svg" alt="Logo" style="width:40px;">
+      </a>
+      <h1 class="text-white">NewsNStuff</h1>
+    </nav>
+    </br>
+    <h3>Select what type of news you would like to search for</h3>
+    <form>
+      <select name="Subjects" class="custom-select" id="Topic">
+        <option selected>Default</option>
+        <option value="Technology">Technology</option>
+        <option value="Sports">Sports</option>
+        <option value="Entertainment">Entertainment</option>
+      </select>
+    </form>
+    <div>
+      <a class="btn btn-info" role="button" onclick="Choose()">Submit</a>
+    </div>
+    <div id="articles"></div>
+  </body>
+</html>
